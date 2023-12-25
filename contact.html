@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KWAPODOR-24/7-ventures</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  
+
+  <header>
+    <h1>Kwapodor Dog Feed</h1>
+  </header>
+    
+  <nav>
+    <img src="Images/dog1a.jpg" alt="Logo">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <!-- <li><a href="about us.html">About</a></li> -->
+      <li><a href="where.html">Where To Buy</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <section>
+    
+    <div>
+      <h2 class="header-h2">Contact Us</h2>
+    </div>
+  
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <button type="button" id="mybutton">Submit</button>
+    </form>
+    <script src="Script.js"></script>
+
+
+  </section>
+
+
+  <footer>
+    <p>Contact us: dorisoffeibea16@gmail.com <br> <br> Phone: (233) 542-599-850 / (233) 501-972-668</p>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div> <br>
+    &copy; 2023 Kwapodor Dog Feed. All rights reserved.
+  </footer>
+
+
+
+  <!--
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+
+    function sendEmail(){
+      Email.send({
+      SecureToken: "c424eaa1-0641-4245-8e72-d941a8556dac",
+     /* Host : "smtp.gmail.com",
+      Username : "calytheanimator@gmail.com",
+      Password : "password",*/
+      To : 'calytheanimator@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "New Contact Form",
+      Body : "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Phone: " + document.getElementById("phone").value
+            + "<br> Message: " + document.getElementById("message").value
+
+       }).then(
+        message => alert("Message Sent Sucessfully")
+        );
+    }
+
+  </script>
+  -->
+
+
+</body>
+</html>

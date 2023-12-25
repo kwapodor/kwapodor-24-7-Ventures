@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #01304f;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #246590;
+}
+
+nav img {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li ::after {
+  content: '';
+  width: 0%;
+  height: 5px;
+  background-color: #014762;
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+nav ul li :hover::after {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav img {
+    margin-bottom: 10px;
+  }
+
+  nav li {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+}
+
+
+
+
+/* Form */
+
+div h2 {
+  text-align: center;
+  padding: 10px;
+  color: #006994;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #006994;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0286ba;
+}
+
+
+
+@media (max-width: 600px) {
+  section {
+    padding: 0px 32px;
+  }
+
+  div h2 {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #006994;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0286ba;
+  }
+}
+
+@media (min-width: 600px) {
+  section {
+    padding: 0px 32px;
+  }
+
+  div h2 {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #006994;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0286ba;
+  }
+}
+
+@media (min-width: 992px) {
+  div h2 {
+    text-align: center;
+    padding: 10px;
+    color: #006994;
+  }
+  
+  form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #006994;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0286ba;
+  }   
+}
+
+@media (min-width: 1200px) {
+  div h2 {
+    text-align: center;
+    padding: 10px;
+    color: #006994;
+  }
+  
+  form {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #006994;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0286ba;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #01304f;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}

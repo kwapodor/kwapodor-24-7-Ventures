@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #01304f;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #246590;
+}
+
+nav img {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li ::after {
+  content: '';
+  width: 0%;
+  height: 5px;
+  background-color: #014762;
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+nav ul li :hover::after {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav img {
+    margin-bottom: 10px;
+  }
+
+  nav li {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+}
+
+
+
+/*Map*/
+.map-container {
+  height: 400px; /* Adjust the height as needed */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.map-container h2 {
+  color: #006994;
+  margin-bottom: 56px;
+}
+
+.map-container iframe {
+  width: 80%;
+  height: 80%;
+}
+
+.map-container-p {
+  margin: 0px auto 16px;
+  padding: 0px 15px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3498db;
+  color: #3498db;
+  width: 50%;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 500px) {
+  .map-container-p {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 600px) {
+  .map-container-p {
+    width: 30%;
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .map-container-p {
+    width: 20%;
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: #01304f;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
